@@ -3,7 +3,12 @@
 Create messed fonts with rules. Used to create custom fonts for the [LiteLoaderQQNT-CCND](https://github.com/MapleRecall/LiteLoaderQQNT-CCND).
 
 > [!WARNING]
-> Initial code, chaos and disorder, not yet libraryized.
+> Initial code, confusing and disorganized. Not yet been librarianized.
+
+| Source | ![](https://github.com/user-attachments/assets/3a96dfa1-c9f5-46aa-8430-750e6d501382) |
+| ---- | ------- |
+| Messed 1 | ![](https://github.com/user-attachments/assets/ee697468-15e0-40a2-a755-d9816902c1b2) |
+| Messed 2 | ![](https://github.com/user-attachments/assets/26b8e9b5-89d4-4b83-9a7e-aad6fcae32b6) |
 
 ## Usage
 
@@ -20,7 +25,7 @@ Create messed fonts with rules. Used to create custom fonts for the [LiteLoaderQ
 ### `replaceSet` Array of rules to replace characters
 
 > [!TIP]
-> You can check the `preset.js` to see how it works.
+> You can check the [preset.js](/src/presets.js) to see how it works.
 
 Each rule is an array with 1 or 2 elements.
 | | | |
@@ -30,8 +35,8 @@ Each rule is an array with 1 or 2 elements.
 
 ```js
 replaceSet = [
-    ["srouce"], // rule 1
-    ["srouce", "target"], // rule 2
+    ["source"], // rule 1
+    ["source", "target"], // rule 2
     [...]
 ]
 ```
