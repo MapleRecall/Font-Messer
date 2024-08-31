@@ -1,14 +1,8 @@
 import fs from "fs";
 import path from "path";
 import getMesser from "./mess.js";
-import * as Presets from "./data/presets.js";
 
-const fontPath = String.raw`SOURCEHANSANSSC-REGULAR.OTF`;
-const replaceSet = Presets.KFC;
-main(fontPath, replaceSet).catch(console.error);
-
-
-async function main(fontPath, replaceSet) {
+export async function main(fontPath, replaceSet) {
   const { name, base, dir } = path.parse(path.resolve(fontPath));
 
   if (!fs.existsSync(fontPath)) {

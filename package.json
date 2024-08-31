@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "mess": "node src/index.js"
+    "mess": "node index.js"
   },
   "author": "",
   "license": "ISC",

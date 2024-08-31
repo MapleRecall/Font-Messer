@@ -7,7 +7,10 @@ Create messed fonts with rules. Used to create custom fonts for the [LiteLoaderQ
 
 ## Usage
 
-Modify the code in `index.js` to generate custom fonts.
+1. Change config in `index.js` to generate custom fonts.
+1. Then run `npm run mess` to generate the font
+
+## Configuration
 
 ### `fontPath` Path to the font file
 
@@ -16,11 +19,19 @@ Modify the code in `index.js` to generate custom fonts.
 
 ### `replaceSet` Array of rules to replace characters
 
-Each array has 2 elements:
+> [!TIP]
+> You can check the `preset.js` to see how it works.
 
-1. Source characters
-1. `optional` Target characters. If not provided, the source character will be self-messed
+Each rule is an array with 1 or 2 elements.
+| | | |
+| ---- | ------- | -------- |
+| 0 | Source characters | required |
+| 1 | Target characters. If not provided, the source character will be self-messed | |
 
-You can check the `preset.js` to see how it works.
-
-Then run `npm run mess` to generate the font
+```js
+replaceSet = [
+    ["srouce"], // rule 1
+    ["srouce", "target"], // rule 2
+    [...]
+]
+```
