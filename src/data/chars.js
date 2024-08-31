@@ -43,14 +43,3 @@ export default {
     SHADE: "░▒▓",
   },
 };
-
-function getAllChineseCharacters() {
-  const chineseCharacters = [];
-  for (let i = 0x4e00; i <= 0x9fff; i++) {
-    chineseCharacters.push(String.fromCharCode(i));
-  }
-  return chineseCharacters;
-}
-
-const allChineseCharacters = getAllChineseCharacters();
-console.log(allChineseCharacters);
